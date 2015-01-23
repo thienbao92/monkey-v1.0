@@ -1028,7 +1028,6 @@
             <layout>main page.xml</layout>
             <layout>Score sheet.xml</layout>
         </layout-folder>
-        <layout>testing.xml</layout>
     </layout-folder>
     <event-folder>
         <event-folder name="game">
@@ -1039,7 +1038,6 @@
             <event-sheet>monkey on fire.xml</event-sheet>
             <event-sheet>Score sheet.xml</event-sheet>
         </event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="LeapMotion" uid="5">

@@ -228,10 +228,18 @@
                 <behavior-type name="ScrollTo" sid="4309658365982504">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="8972546821243947">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1762368275366403" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1762368275366403" speed="5">
+                    <frame duration="1" hotspotX="0.806391" hotspotY="0.685552" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\1.png" />
+                    <frame duration="1" hotspotX="0.785714" hotspotY="0.693548" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\2.png" />
+                    <frame duration="1" hotspotX="0.787594" hotspotY="0.698163" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\3.png" />
+                    <frame duration="1" hotspotX="0.787594" hotspotY="0.707572" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\4.png" />
+                    <frame duration="1" hotspotX="0.789474" hotspotY="0.702918" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\5.png" />
+                    <frame duration="1" hotspotX="0.785714" hotspotY="0.696" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\6.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1016,6 +1024,147 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="bubble" sid="1530644376590427">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5455238173452374" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Bubble\8.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caVoi" sid="7750836968735573">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="speed" sid="809406348200694" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="19" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1835959795350412" speed="15">
+                    <frame duration="1" hotspotX="0.502075" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00002.png">
+                        <image-point name="Imagepoint 1" x="0.340249" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00003.png">
+                        <image-point name="Imagepoint 1" x="0.341365" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00004.png">
+                        <image-point name="Imagepoint 1" x="0.342308" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501859" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00005.png">
+                        <image-point name="Imagepoint 1" x="0.342007" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00006.png">
+                        <image-point name="Imagepoint 1" x="0.341818" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00007.png">
+                        <image-point name="Imagepoint 1" x="0.34058" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00008.png">
+                        <image-point name="Imagepoint 1" x="0.339416" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00009.png">
+                        <image-point name="Imagepoint 1" x="0.340741" y="0.0117647" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501859" hotspotY="0.50289" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00010.png">
+                        <image-point name="Imagepoint 1" x="0.342007" y="0.0115607" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502924" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00011.png">
+                        <image-point name="Imagepoint 1" x="0.340741" y="0.0116959" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501832" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00012.png">
+                        <image-point name="Imagepoint 1" x="0.340659" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00013.png">
+                        <image-point name="Imagepoint 1" x="0.34058" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00014.png">
+                        <image-point name="Imagepoint 1" x="0.34058" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501832" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00015.png">
+                        <image-point name="Imagepoint 1" x="0.340659" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00016.png">
+                        <image-point name="Imagepoint 1" x="0.342105" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.501945" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00017.png">
+                        <image-point name="Imagepoint 1" x="0.338521" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00018.png">
+                        <image-point name="Imagepoint 1" x="0.33871" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.502075" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00019.png">
+                        <image-point name="Imagepoint 1" x="0.340249" y="0.0121951" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\ca voi\ca voi_00020.png">
+                        <image-point name="Imagepoint 1" x="0.340336" y="0.0121951" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caVoiBubble" sid="8772940942831314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="19" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8099889450683138" speed="8">
+                    <frame duration="1" hotspotX="0.502488" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00003.png" />
+                    <frame duration="1" hotspotX="0.502392" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00004.png" />
+                    <frame duration="1" hotspotX="0.501742" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00006.png" />
+                    <frame duration="1" hotspotX="0.50193" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00008.png" />
+                    <frame duration="1" hotspotX="0.502959" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00010.png" />
+                    <frame duration="1" hotspotX="0.501873" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00011.png" />
+                    <frame duration="1" hotspotX="0.501558" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00013.png" />
+                    <frame duration="1" hotspotX="0.501832" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00014.png" />
+                    <frame duration="1" hotspotX="0.502392" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00016.png" />
+                    <frame duration="1" hotspotX="0.50211" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00019.png" />
+                    <frame duration="1" hotspotX="0.502326" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\ca voi\bong bong\bong bong_00020.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="9417276316172062">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="9" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="4149632736489904" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0000.png">
+                        <collision-poly>
+                            <point x="0.0745192" y="0.0639372" />
+                            <point x="0.478365" y="0.0168256" />
+                            <point x="0.947115" y="0.0487942" />
+                            <point x="0.872596" y="0.494672" />
+                            <point x="0.961538" y="0.943915" />
+                            <point x="0.478365" y="0.996635" />
+                            <point x="0.00961538" y="0.94055" />
+                            <point x="0.09375" y="0.494672" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0001.png" />
+                    <frame duration="1" hotspotX="0.501241" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0002.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0004.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0005.png" />
+                    <frame duration="1" hotspotX="0.501241" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\game\Sprites\monkey\monkey on boat\seaweed\seaweed0008.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LEVEL" sid="3226314868779517">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="LEVEL" sid="5004064151522962" type="number" />
+            </instance-variables>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1027,6 +1176,7 @@
             <layout>monkey on fire.xml</layout>
             <layout>main page.xml</layout>
             <layout>Score sheet.xml</layout>
+            <layout>monkey and fish.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -1037,6 +1187,7 @@
             <event-sheet>monkey and plane.xml</event-sheet>
             <event-sheet>monkey on fire.xml</event-sheet>
             <event-sheet>Score sheet.xml</event-sheet>
+            <event-sheet>monkey and fish.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>

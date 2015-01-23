@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>monkey and fish</name>
+    <events>
+        <variable constant="0" name="TimeSpeed" sid="5385695247916579" static="0" type="number">5</variable>
+        <variable constant="0" name="FishSpeed" sid="1699983679091332" static="0" type="number">-7</variable>
+        <event-block sid="9977864991029592">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1589367282263994" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="3165906081900432" type="caVoiBubble">
+                    <param id="0" name="Object">caVoi</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-17" name="Move forward" sid="3786169901145009" type="caVoi">
+                    <param id="0" name="Distance">caVoi.speed</param>
+                </action>
+                <action id="0" name="Set text" sid="5432462417964372" type="LEVEL">
+                    <param id="0" name="Text">&quot;lv: &quot;&amp;LEVEL.LEVEL</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2737390400213085">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8182057383310819" type="System">
+                    <param id="0" name="Interval (seconds)">TimeSpeed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="621290397267009" type="System">
+                    <param id="0" name="Object to create">caVoiBubble</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="7255138212810827" type="System">
+                    <param id="0" name="Object to create">caVoi</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1920</param>
+                    <param id="3" name="Y">round(random(100,900))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3303985404972524" title="Controller6">
+            <sub-events>
+                <event-block sid="3233602426687441">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3497584297687436" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1670212220286825" type="boat">
+                            <param id="0" name="X">lerp(boat.X, LeapMotion.HandXForID(HandID), 0.1*(120*dt))</param>
+                            <param id="1" name="Y">lerp(boat.Y, LeapMotion.HandYForID(HandID), 0.1*(120*dt))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6444421074318736">
+                    <conditions>
+                        <condition id="0" name="On any hand enter frame" sid="9581662729324517" type="LeapMotion" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7128990091831156" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Value">LeapMotion.LastHandID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7186693489244259" title="Collision 1">
+            <sub-events>
+                <event-block sid="8409029752721303">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2832093681598204" type="boat">
+                            <param id="0" name="Object">caVoi</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="7409025150381263" type="boat">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1048839811308072">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7490386823031014" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="5129886739787057" type="caVoi">
+                    <param id="0" name="Instance variable">speed</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="6248429132949424" type="System">
+                    <param id="0" name="Variable">TimeSpeed</param>
+                    <param id="1" name="Value">0.5</param>
+                </action>
+                <action id="-11" name="Add to" sid="8746753404400988" type="LEVEL">
+                    <param id="0" name="Instance variable">LEVEL</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

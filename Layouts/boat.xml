@@ -130,6 +130,7 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Flash" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -137,11 +138,11 @@
                         <x>777</x>
                         <y>780</y>
                         <z>0</z>
-                        <width>410</width>
-                        <height>100</height>
+                        <width>872.479980469</width>
+                        <height>141.199996948</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.806391001</hotspotX>
+                        <hotspotY>0.685552418</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

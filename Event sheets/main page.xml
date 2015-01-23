@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>main page</name>
+    <events>
+        <variable constant="0" name="counter" sid="807997281132484" static="0" type="number">0</variable>
+        <variable constant="0" name="Score" sid="636677147093818" static="0" type="number">0</variable>
+        <variable constant="0" name="startpoint" sid="7041965212160188" static="0" type="number">500</variable>
+        <variable constant="0" name="fireScale" sid="8258244011684418" static="0" type="number">1</variable>
+        <variable constant="0" name="handID" sid="4052386653688254" static="0" type="number">0</variable>
+        <event-group description="" sid="2861312547677589" title="Controller5">
+            <sub-events>
+                <event-block sid="3233602426687441">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3497584297687436" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1670212220286825" type="playcontroller">
+                            <param id="0" name="X">lerp(playcontroller.X, LeapMotion.HandXForID(HandID), 0.1*(100*dt))</param>
+                            <param id="1" name="Y">912</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7504290662050872">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3486447913136238" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="6444421074318736">
+                    <conditions>
+                        <condition id="0" name="On any hand enter frame" sid="9581662729324517" type="LeapMotion" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7128990091831156" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Value">LeapMotion.LastHandID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9872238872850908">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7191475760329311" type="playcontroller">
+                            <param id="0" name="Object">startPoint</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="4556958155829716" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana&quot;, round(random(0,3)), &quot;|&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="5358938865661129">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="357251793405864" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="4240174225052487" type="playcontroller">
+                    <param id="0" name="X">startpoint</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="1509880517655213" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="6075079322339281">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="3079541115906585" type="playcontroller">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">startpoint</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="1180495658401869" type="playcontroller">
+                    <param id="0" name="X">startpoint</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7917952195146498">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9240087952060348" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3904786783562195" type="System">
+                    <param id="0" name="Layout">main page</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="3227074924455659" title="Hand tips4">
+            <sub-events>
+                <event-block sid="9743785390691664">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5006708361347174" type="handMain">
+                            <param id="0" name="Object">startPoint</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5491285790562133" type="handMain">
+                            <param id="0" name="X">playcontroller.X</param>
+                            <param id="1" name="Y">playcontroller.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7291982755249052">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="4033246402090591" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="9" name="Set vector X" sid="3312822220261261" type="handMain">
+                            <param id="0" name="Vector X">1500</param>
+                        </action>
+                        <action id="-17" name="Move forward" sid="4559331551290003" type="cloud">
+                            <param id="0" name="Distance">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="4251474993129616">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1860925474269098" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2484791046760233" type="System">
+                    <param id="0" name="Object to create">cloud</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1609706067352712">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="8737124161047351" type="cloud" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3630661306723876" type="cloud" />
+            </actions>
+        </event-block>
+        <event-block sid="5682422174805464">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2817269065649809" type="System" />
+            </conditions>
+            <actions>
+                <action id="-25" name="Move to bottom" sid="8770479541000673" type="cloud" />
+            </actions>
+            <sub-events>
+                <event-block sid="3330832398836267">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="254443818803714" type="playcontroller">
+                            <param id="0" name="Object">SlideToPlay</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="9368480937928264" type="SlideToPlay">
+                            <param id="0" name="Opacity">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2647831313895219">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="714652117791747" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="3368378780579774" type="SlideToPlay">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4735569098395855">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6851121753520418" type="Sprite12">
+                    <param id="0" name="Object">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="9217567915130404" type="Sprite12">
+                    <param id="0" name="Vector Y">-360</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Score sheet</name>
+    <events>
+        <variable constant="0" name="life" sid="8004689634619471" static="0" type="number">3</variable>
+        <event-group description="Life stars equal to life" sid="1726543348345004" title="Life animation">
+            <sub-events>
+                <event-block sid="620203976009595">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4928409934225997" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8190818720472928" type="star">
+                            <param id="0" name="Animation">&quot;3Star&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2123385849582748" type="System">
+                            <param id="0" name="Seconds">2.5</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="7719930557311928" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, round(random(0,3)), &quot;|&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2063673364041857">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4637669705432706" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6905619146571378" type="star">
+                            <param id="0" name="Animation">&quot;2Star&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8054628823014577" type="System">
+                            <param id="0" name="Seconds">2.5</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="2122577179977829" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, round(random(0,3)), &quot;|&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1424014851219519">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3501157682338004" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9336329108141666" type="star">
+                            <param id="0" name="Animation">&quot;1Star&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7411110505729545" type="System">
+                            <param id="0" name="Seconds">2.5</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="5397279036322653" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, choose(0,1,2,3), &quot;|&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2237416607723862">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7946933912996294" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9451063422988444" type="star">
+                            <param id="0" name="Animation">&quot;0Star&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4554057639996969" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6726055639806396" type="System">
+                            <param id="0" name="Layout">main page</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6812745872572177" title="Change game play" />
+        <event-block sid="9481906709166472">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4981083510226946" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3488109054114774" type="counter">
+                    <param id="0" name="Text">counter</param>
+                </action>
+                <action id="0" name="Set text" sid="87839519592859" type="Score">
+                    <param id="0" name="Text">&quot;Level Completed: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

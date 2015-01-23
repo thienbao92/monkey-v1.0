@@ -13,9 +13,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>main page</layout>
         <layout>Score sheet</layout>
         <layout>monkey and plane</layout>
+        <layout active="1">testing</layout>
         <event-sheet>Score sheet</event-sheet>
         <event-sheet>main page</event-sheet>
-        <event-sheet active="1">monkey and plane</event-sheet>
+        <event-sheet>monkey and plane</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

@@ -221,6 +221,9 @@
         </object-type>
         <object-type name="boat" sid="5699107811714625">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="health" sid="939606245972352" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="1175760297519012">
                     <behavior id="Platform" />
@@ -231,15 +234,15 @@
                 <behavior-type name="Flash" sid="8972546821243947">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="2230592896635712">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1762368275366403" speed="5">
-                    <frame duration="1" hotspotX="0.806391" hotspotY="0.685552" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\1.png" />
-                    <frame duration="1" hotspotX="0.785714" hotspotY="0.693548" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\2.png" />
-                    <frame duration="1" hotspotX="0.787594" hotspotY="0.698163" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\3.png" />
-                    <frame duration="1" hotspotX="0.787594" hotspotY="0.707572" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\4.png" />
-                    <frame duration="1" hotspotX="0.789474" hotspotY="0.702918" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\5.png" />
-                    <frame duration="1" hotspotX="0.785714" hotspotY="0.696" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\6.png" />
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1762368275366403" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501416" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\1.png">
+                        <image-point name="Imagepoint 1" x="0.595865" y="0.0339943" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -595,7 +598,7 @@
         <object-type name="star" sid="3038369074044876">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="3Star" pingpong="0" repeatcount="1" repeatto="0" sid="9654723378565042" speed="5">
+                <animation framecount="4" loop="0" name="3Star" pingpong="0" repeatcount="1" repeatto="0" sid="9654723378565042" speed="5">
                     <frame duration="1" hotspotX="0.516055" hotspotY="0.51875" original-source="C:\game\Sprites\monkey\Score board\3 star.png">
                         <collision-poly>
                             <point x="0.104916" y="0.270759" />
@@ -608,9 +611,12 @@
                             <point x="0.0405359" y="0.517634" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\2 star.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\1 star.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
                 <animation framecount="1" loop="0" name="2Star" pingpong="0" repeatcount="1" repeatto="0" sid="6860718435269782" speed="5">
-                    <frame duration="1" hotspotX="1.24126" hotspotY="0.51875" original-source="C:\game\Sprites\monkey\Score board\2 star.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\2 star.png">
                         <collision-poly>
                             <point x="0.253194" y="0.270759" />
                             <point x="1" y="0.0944196" />
@@ -622,7 +628,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="1Star" pingpong="0" repeatcount="1" repeatto="0" sid="8981101489437007" speed="5">
-                    <frame duration="1" hotspotX="6.04444" hotspotY="0.51875" original-source="C:\game\Sprites\monkey\Score board\1 star.png">
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\1 star.png">
                         <collision-poly>
                             <point x="1" y="0.270759" />
                             <point x="1" y="0.517634" />
@@ -1132,7 +1138,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite20" sid="9417276316172062">
+        <object-type name="rongBien" sid="9417276316172062">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="9" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="4149632736489904" speed="6">
@@ -1159,11 +1165,51 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="LEVEL" sid="3226314868779517">
+        <object-type name="health" sid="3226314868779517">
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="LEVEL" sid="5004064151522962" type="number" />
             </instance-variables>
+        </object-type>
+        <object-type name="Sprite20" sid="181892083465421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="8557296275583804" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\bubble 2\2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.181818" />
+                            <point x="0.921348" y="0.5" />
+                            <point x="0.5" y="0.295455" />
+                            <point x="0.893258" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\bubble 2\3.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\bubble 2\4.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\bubble 2\5.png" />
+                    <frame duration="1" hotspotX="1" hotspotY="0.505618" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\Boat\bubble 2\6.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="1205308512749768">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="14" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2317865526457258" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501873" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00002.png" />
+                    <frame duration="1" hotspotX="0.501792" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00003.png" />
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00004.png" />
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00006.png" />
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00007.png" />
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.501859" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00008.png" />
+                    <frame duration="1" hotspotX="0.501779" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00009.png" />
+                    <frame duration="1" hotspotX="0.501805" hotspotY="0.501845" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00010.png" />
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.501845" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00011.png" />
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.501845" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00012.png" />
+                    <frame duration="1" hotspotX="0.501792" hotspotY="0.5" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501845" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00014.png" />
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.501859" original-source="C:\game\Sprites\monkey\Score board\dau khi\daukhi_00015.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

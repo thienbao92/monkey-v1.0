@@ -326,5 +326,16 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="6996895997575816">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6400772237260823" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="8432918556882663" type="Sprite20">
+                    <param id="0" name="Object">boat</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

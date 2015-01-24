@@ -332,12 +332,19 @@
                         <action id="-16" name="Wait" sid="2404123597365924" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
-                        <action id="3" name="Set progress" sid="2426881169901691" type="ProgressBar">
-                            <param id="0" name="Value">timer</param>
-                        </action>
                         <action id="-11" name="Subtract from" sid="4573776480580802" type="System">
                             <param id="0" name="Variable">timer</param>
                             <param id="1" name="Value">0.2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1783163283292303">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8249919161193341" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set progress" sid="7857973212182712" type="ProgressBar">
+                            <param id="0" name="Value">timer</param>
                         </action>
                     </actions>
                 </event-block>
@@ -430,6 +437,10 @@
                             <param id="0" name="Text">plane.health</param>
                         </action>
                         <action id="-24" name="Move to top" sid="1089181625696671" type="Sprite17" />
+                        <action id="-4" name="Set position to another object" sid="9797758707272395" type="Sprite11">
+                            <param id="0" name="Object">plane</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3134058876046395">

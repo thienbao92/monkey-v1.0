@@ -27,7 +27,30 @@
             <global>0</global>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Sprite20" uid="140">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1268</x>
+                        <y>1391</y>
+                        <z>0</z>
+                        <width>178</width>
+                        <height>88</height>
+                        <depth>0</depth>
+                        <hotspotX>1</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="sprites" sid="4159901743435296">
@@ -110,6 +133,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <health>5</health>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
                             <properties>
@@ -131,18 +157,23 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="Flash" />
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>777</x>
-                        <y>780</y>
+                        <x>1206.182495117</x>
+                        <y>797.145874023</y>
                         <z>0</z>
-                        <width>872.479980469</width>
-                        <height>141.199996948</height>
+                        <width>526.553039551</width>
+                        <height>277.768798828</height>
                         <depth>0</depth>
-                        <hotspotX>0.806391001</hotspotX>
-                        <hotspotY>0.685552418</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501416445</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1464,8 +1495,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>679</x>
-                        <y>678</y>
+                        <x>650</x>
+                        <y>674</y>
                         <z>0</z>
                         <width>811.537719727</width>
                         <height>132.997161865</height>

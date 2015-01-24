@@ -151,11 +151,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>843.030212402</x>
+                        <x>868.999572754</x>
                         <y>1122</y>
                         <z>0</z>
-                        <width>217.70375061</width>
-                        <height>606.650085449</height>
+                        <width>165.76512146</width>
+                        <height>461.918640137</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -173,11 +173,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1517.714477539</x>
+                        <x>1531.622314453</x>
                         <y>1121</y>
                         <z>0</z>
-                        <width>173.570999146</width>
-                        <height>372.297210693</height>
+                        <width>145.755065918</width>
+                        <height>312.634063721</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
@@ -232,7 +232,7 @@
                 <instance type="LEVEL" uid="138">
                     <properties>
                         <text>Text</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>UTM Cookies,-64,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>

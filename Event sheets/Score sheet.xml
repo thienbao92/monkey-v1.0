@@ -20,7 +20,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="2123385849582748" type="System">
-                            <param id="0" name="Seconds">2.5</param>
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-25" name="Go to layout (by name)" sid="7719930557311928" type="System">
                             <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, round(random(0,3)), &quot;|&quot;)</param>
@@ -41,7 +41,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="8054628823014577" type="System">
-                            <param id="0" name="Seconds">2.5</param>
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-25" name="Go to layout (by name)" sid="2122577179977829" type="System">
                             <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, round(random(0,3)), &quot;|&quot;)</param>
@@ -62,7 +62,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="7411110505729545" type="System">
-                            <param id="0" name="Seconds">2.5</param>
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-25" name="Go to layout (by name)" sid="5397279036322653" type="System">
                             <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|&quot;, choose(0,1,2,3), &quot;|&quot;)</param>
@@ -83,7 +83,7 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="4554057639996969" type="System">
-                            <param id="0" name="Seconds">5</param>
+                            <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="6726055639806396" type="System">
                             <param id="0" name="Layout">main page</param>

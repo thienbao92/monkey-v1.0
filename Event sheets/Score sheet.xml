@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Score sheet</name>
     <events>
+        <variable constant="0" name="layout" sid="2446635666880462" static="0" type="text">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</variable>
         <variable constant="0" name="life" sid="8004689634619471" static="0" type="number">3</variable>
         <event-group description="Life stars equal to life" sid="1726543348345004" title="Life animation">
             <sub-events>
@@ -23,7 +24,7 @@
                         </action>
                         <action id="2" name="Stop" sid="4423369356115106" type="star" />
                         <action id="-25" name="Go to layout (by name)" sid="7719930557311928" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -43,8 +44,8 @@
                             <param id="0" name="Seconds">4</param>
                         </action>
                         <action id="2" name="Stop" sid="1834485899999908" type="star" />
-                        <action id="-25" name="Go to layout (by name)" sid="4656357075064263" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="6547020919612061" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -63,8 +64,8 @@
                         <action id="-16" name="Wait" sid="7411110505729545" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="-25" name="Go to layout (by name)" sid="8484638384186215" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="947226616473092" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -122,6 +123,125 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="8843472655964062">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2296810761639117" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="388299883223035">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8463593379004144" type="System">
+                            <param id="0" name="Variable">counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="6519116368031999" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="5029486455168519" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="994677465950727" type="Text5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1942384950151132" type="Text5">
+                            <param id="0" name="Text">&quot;Faster&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4628193420119333">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1747375147240772" type="System">
+                            <param id="0" name="Variable">counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="1921810131876518" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9679010284926307" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="7276704176028456" type="Text5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6906160102062759" type="Text5">
+                            <param id="0" name="Text">&quot;Faster faster&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9804859780316065">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="2930616101772674" type="System">
+                            <param id="0" name="Variable">counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="5252322522619727" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="7453515463645248" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4645853223546427" type="Text5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4401118015120946" type="Text5">
+                            <param id="0" name="Text">&quot;Faster faster  faster&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3272470646739781">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="5396841324697937" type="System">
+                            <param id="0" name="Variable">counter</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="8904913408360837" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="5677755038250971" type="System">
+                            <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6125856862039372" type="Text5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5924025241068991" type="Text5">
+                            <param id="0" name="Text">&quot;Faster faster faster faster&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6549147711095042">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="6773256642866672" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="543703604302745" type="System">
+                    <param id="0" name="Layer">&quot;Layer 0&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

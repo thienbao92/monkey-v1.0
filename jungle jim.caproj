@@ -10,6 +10,7 @@
     <unique-id>1lc08re8izhp6</unique-id>
     <saved-with-version>19000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Henry Hoffman" id="Leap" version="1">Leap Motion</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -282,11 +283,6 @@
             <instance-variables>
                 <instance-variable name="speed" sid="9527641028321497" type="number" />
             </instance-variables>
-            <behaviors>
-                <behavior-type name="Solid" sid="2612022986485503">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6471136303796885" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -310,6 +306,9 @@
         </object-type>
         <object-type name="coconut" sid="4764496158494732">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="time" sid="7868074284215784" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="7455425528197779">
                     <behavior id="Platform" />
@@ -357,6 +356,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="health" sid="7316479334540337" type="number" />
+                <instance-variable name="timer" sid="3929765188291971" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="BoundToLayout" sid="3781168801520675">
@@ -631,6 +631,11 @@
         </object-type>
         <object-type name="star" sid="3038369074044876">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="6398807646704919">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="4" loop="0" name="3Star" pingpong="0" repeatcount="1" repeatto="0" sid="9654723378565042" speed="5">
                     <frame duration="1" hotspotX="0.516055" hotspotY="0.51875" original-source="C:\game\Sprites\monkey\Score board\3 star.png">
@@ -1055,14 +1060,6 @@
         </object-type>
         <object-type name="Text" sid="7363715754733039">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Sprite16" sid="9419085197684449">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9873098754570776" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="bubble" sid="1530644376590427">
             <plugin id="Sprite" />
@@ -1661,6 +1658,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text5" sid="4235656738582246">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Flash" sid="6603574402348627">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Audio" sid="9514653894599778">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1701,9 +1709,30 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="110">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="small_airplane_long_flyby-Mike_Koenig-806755389_01.ogg" />
+        <file name="wave.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="FINNAL_01.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

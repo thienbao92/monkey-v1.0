@@ -125,6 +125,7 @@
                     </properties>
                     <instance-variables>
                         <health>5</health>
+                        <timer>5</timer>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">

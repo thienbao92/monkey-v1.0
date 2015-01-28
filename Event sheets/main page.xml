@@ -69,6 +69,12 @@
                     <param id="0" name="X">startpoint</param>
                 </action>
                 <action id="-21" name="Reset global variables" sid="1509880517655213" type="System" />
+                <action id="0" name="Play" sid="2258711711226923" type="Audio">
+                    <param id="0" name="Audio file">FINNAL_01</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="6075079322339281">
@@ -140,6 +146,9 @@
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">0</param>
                     <param id="3" name="Y">random(200,600)</param>
+                </action>
+                <action id="5" name="Set frame" sid="3682106493478716" type="cloud">
+                    <param id="0" name="Frame number">choose(0,1,2)</param>
                 </action>
             </actions>
         </event-block>

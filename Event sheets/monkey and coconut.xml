@@ -35,7 +35,7 @@
         </event-group>
         <event-group description="" sid="880961937812819" title="banana">
             <sub-events>
-                <event-block sid="9819285819509981">
+                <event-block disabled="1" sid="9819285819509981">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="9219226924285455" type="System">
                             <param id="0" name="Interval (seconds)">random(1,3)</param>
@@ -45,8 +45,8 @@
                         <action id="-3" name="Create object" sid="9711125467138308" type="System">
                             <param id="0" name="Object to create">coconut</param>
                             <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(100,1700)</param>
-                            <param id="3" name="Y">-70</param>
+                            <param id="2" name="X">random(100,1480)</param>
+                            <param id="3" name="Y">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -56,7 +56,13 @@
                             <param id="0" name="Object">character</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2855296881815078" type="coconut" />
+                        <action id="4" name="Set animation" sid="8109122516484578" type="monkeyCoco">
+                            <param id="0" name="Animation">&quot;happy&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="232924173597881">
                             <conditions>
@@ -83,7 +89,17 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="4317914956563667" type="coconut" />
+                <action id="4" name="Set animation" sid="1340568811632779" type="coconut">
+                    <param id="0" name="Animation">&quot;broken&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="7897256902800201" type="monkeyCoco">
+                    <param id="0" name="Animation">&quot;sad&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="6239261994932538" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
                 <action id="-11" name="Subtract from" sid="734173098458562" type="System">
                     <param id="0" name="Variable">life</param>
                     <param id="1" name="Value">1</param>
@@ -120,13 +136,20 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="5352474151232848" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="6978690876433498" type="Audio">
+                            <param id="0" name="Audio file">wave</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="2735699932829844">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="8379192198366994" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
@@ -135,13 +158,17 @@
                                     <param id="0" name="Variable">timer</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="4485468342443944" type="coconut">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="8996899131721042">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4084416662079347" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
                                 </condition>
                             </conditions>
@@ -149,6 +176,10 @@
                                 <action id="-9" name="Set value" sid="2754576666057066" type="System">
                                     <param id="0" name="Variable">timer</param>
                                     <param id="1" name="Value">90</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="1279775921609805" type="coconut">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -277,5 +308,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="2407877381216151">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="9520006727176342" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="9708469638986121" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

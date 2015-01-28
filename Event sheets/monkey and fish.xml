@@ -30,12 +30,21 @@
                 <action id="0" name="Set text" sid="4189732384732098" type="health">
                     <param id="0" name="Text">boat.health</param>
                 </action>
+                <action id="-17" name="Move forward" sid="1380172168735174" type="caXanh">
+                    <param id="0" name="Distance">caXanh.speed</param>
+                </action>
+                <action behavior="8Direction" id="10" name="Set vector Y" sid="933422503750558" type="octopus">
+                    <param id="0" name="Vector Y">octopus.speed</param>
+                </action>
+                <action behavior="8Direction" id="10" name="Set vector Y" sid="2303818283502988" type="sua">
+                    <param id="0" name="Vector Y">sua.speed</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="2737390400213085">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="8182057383310819" type="System">
-                    <param id="0" name="Interval (seconds)">TimeSpeed</param>
+                    <param id="0" name="Interval (seconds)">8</param>
                 </condition>
             </conditions>
             <actions>
@@ -51,6 +60,44 @@
                     <param id="2" name="X">1920</param>
                     <param id="3" name="Y">round(random(100,900))</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="2145991631191571">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2781879474185001" type="System">
+                    <param id="0" name="Interval (seconds)">choose(2,4,6)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5473611210676827" type="System">
+                    <param id="0" name="Object to create">caXanh</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1920</param>
+                    <param id="3" name="Y">random(0,1000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3611284847296055">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2581460819627428" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="9608346559891665" type="System">
+                    <param id="0" name="Object to create">octopus</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(0,1900)</param>
+                    <param id="3" name="Y">1080</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6599442597889038">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="1245274758087154" type="octopus" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8007567796881025" type="octopus" />
             </actions>
         </event-block>
         <event-group description="" sid="3303985404972524" title="Controller6">
@@ -85,7 +132,7 @@
         </event-group>
         <event-group description="" sid="7186693489244259" title="Collision 1">
             <sub-events>
-                <event-block sid="8409029752721303">
+                <event-block any="1" sid="8409029752721303">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="2832093681598204" type="boat">
                             <param id="0" name="Object">caVoi</param>
@@ -99,8 +146,86 @@
                         </action>
                         <action id="-12" name="Subtract from" sid="2194613699758706" type="boat">
                             <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6964061296081214" type="boat">
+                            <param id="0" name="Object">explotion</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3523354925643599" type="caVoi" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="6227632198530874">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="428560854702805" type="boat">
+                            <param id="0" name="Object">caXanh</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="7117532163226557" type="boat">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="9714156659012472" type="boat">
+                            <param id="0" name="Instance variable">health</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Spawn another object" sid="8914903535583463" type="boat">
+                            <param id="0" name="Object">explotion</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="8088086764168022" type="caXanh" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="2537858754670041">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4030451707474919" type="boat">
+                            <param id="0" name="Object">octopus</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="5417184095885582" type="boat">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="2379463536805864" type="boat">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="3267202484209715" type="boat">
+                            <param id="0" name="Object">explotion</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="6741495495026803" type="octopus" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="9348471235779755">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1439298363151506" type="boat">
+                            <param id="0" name="Object">sua</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="1525584810790746" type="boat">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="5075648676594522" type="boat">
+                            <param id="0" name="Instance variable">health</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6914247511187737" type="boat">
+                            <param id="0" name="Object">explotion</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7753270162535546" type="sua" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -192,13 +317,21 @@
                                     <param id="0" name="Variable">timer</param>
                                     <param id="1" name="Value">100</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="2605619052425079" type="caXanh">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-6</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="9406180646368007" type="caVoi">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-4</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="5722400173434248">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4675034908535911" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">5</param>
                                 </condition>
                             </conditions>
@@ -207,13 +340,21 @@
                                     <param id="0" name="Variable">timer</param>
                                     <param id="1" name="Value">90</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="7352866036934312" type="caXanh">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-7</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7788575683776367" type="caVoi">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-5</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="6232372525535275">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5832025855190142" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">10</param>
                                 </condition>
                             </conditions>
@@ -222,13 +363,21 @@
                                     <param id="0" name="Variable">timer</param>
                                     <param id="1" name="Value">80</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="1270875874549568" type="caXanh">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-8</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4479080074183947" type="caVoi">
+                                    <param id="0" name="Instance variable">speed</param>
+                                    <param id="1" name="Value">-6</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="4489081317319396">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="6260752996162957" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">15</param>
                                 </condition>
                             </conditions>
@@ -243,7 +392,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="6490833466266192" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">20</param>
                                 </condition>
                             </conditions>
@@ -258,7 +407,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="730626589084011" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">25</param>
                                 </condition>
                             </conditions>
@@ -273,7 +422,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4150358926538578" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">30</param>
                                 </condition>
                             </conditions>
@@ -288,7 +437,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5756207587359196" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">35</param>
                                 </condition>
                             </conditions>
@@ -303,7 +452,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="9446862376657976" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">40</param>
                                 </condition>
                             </conditions>
@@ -339,6 +488,50 @@
                     <actions>
                         <action id="3" name="Set progress" sid="4753066007371934" type="ProgressBar">
                             <param id="0" name="Value">timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="629440621825555">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4817810118011883" type="System">
+                    <param id="0" name="Interval (seconds)">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4538215655164519" type="System">
+                    <param id="0" name="Object to create">sua</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(100, 1920) </param>
+                    <param id="3" name="Y">1080</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9794825695336931" title="Hand tips5">
+            <sub-events>
+                <event-block sid="2947950959094431">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="2717422679798754" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="9004381759369887" type="System">
+                            <param id="0" name="Seconds">2.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="9428149945408556" type="System">
+                            <param id="0" name="Layer">&quot;hand&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4675131214753926">
+                    <conditions>
+                        <condition id="-3" name="On end of layout" sid="3434777981609438" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="5629247731547002" type="System">
+                            <param id="0" name="Layer">&quot;hand&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
                     </actions>
                 </event-block>

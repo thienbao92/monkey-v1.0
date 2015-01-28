@@ -84,7 +84,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="7917952195146498">
+        <event-block disabled="1" sid="7917952195146498">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="9240087952060348" type="System">
                     <param id="0" name="Variable">life</param>
@@ -122,7 +122,7 @@
                             <param id="0" name="Vector X">1500</param>
                         </action>
                         <action id="-17" name="Move forward" sid="4559331551290003" type="cloud">
-                            <param id="0" name="Distance">5</param>
+                            <param id="0" name="Distance">3</param>
                         </action>
                     </actions>
                 </event-block>
@@ -139,7 +139,7 @@
                     <param id="0" name="Object to create">cloud</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">0</param>
-                    <param id="3" name="Y">200</param>
+                    <param id="3" name="Y">random(200,600)</param>
                 </action>
             </actions>
         </event-block>

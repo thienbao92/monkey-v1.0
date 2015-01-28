@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>monkey and coconut</name>
+    <events>
+        <event-group description="" sid="5503177878061697" title="Controller2">
+            <sub-events>
+                <event-block sid="3233602426687441">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3497584297687436" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1670212220286825" type="character">
+                            <param id="0" name="X">lerp(character.X, LeapMotion.HandXForID(HandID), 0.1*(120*dt))</param>
+                            <param id="1" name="Y">881</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6444421074318736">
+                    <conditions>
+                        <condition id="0" name="On any hand enter frame" sid="9581662729324517" type="LeapMotion" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7128990091831156" type="System">
+                            <param id="0" name="Variable">handID</param>
+                            <param id="1" name="Value">LeapMotion.LastHandID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="880961937812819" title="banana">
+            <sub-events>
+                <event-block sid="9819285819509981">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9219226924285455" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,3)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9711125467138308" type="System">
+                            <param id="0" name="Object to create">coconut</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(100,1700)</param>
+                            <param id="3" name="Y">-70</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="892325632864577">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="3412272387783434" type="coconut">
+                            <param id="0" name="Object">character</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="232924173597881">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="6824123238087627" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="5732056570336428" type="coconut">
+                                    <param id="0" name="X">character.X</param>
+                                    <param id="1" name="Y">character.Y</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="4124510604162123" type="coconut">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1081919785290646">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="897183211400312" type="coconut">
+                    <param id="0" name="Object">land</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4317914956563667" type="coconut" />
+                <action id="-11" name="Subtract from" sid="734173098458562" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="5338560545663764" type="System">
+                    <param id="0" name="Layout">Score sheet</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="8751188098262418" title="timer3">
+            <sub-events>
+                <event-block sid="1754388805235844">
+                    <conditions>
+                        <condition id="1" name="Compare progress" sid="6251117020156203" type="ProgressBar">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="2546748354878463" type="System">
+                            <param id="0" name="Layout">Score sheet</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="8061997660356584" type="System">
+                            <param id="0" name="Variable">counter</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="1894437428510096" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7154507967042687">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="5352474151232848" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2735699932829844">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8379192198366994" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9821906020709225" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8996899131721042">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4084416662079347" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2754576666057066" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3414204643139479">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5279289469325994" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="7940944654997064" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">80</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8170388192636801">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4695250157313257" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="7898311802986057" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">70</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3650228119724193">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8141787784041811" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="6378580960007666" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">60</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3696620812786562">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="1693796390884872" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2244357483742551" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6927757528876776">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5488586135146999" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">30</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="8151142837521733" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">40</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626708548069404">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="280061898983186" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">35</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="3085595524656187" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">30</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="2958884737081375">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6430220778837868" type="System">
+                                    <param id="0" name="Variable">counter</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">40</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="762455998800309" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">20</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7446649658150226">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="439849204990976" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="4573776480580802" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">0.3</param>
+                        </action>
+                        <action id="3" name="Set progress" sid="2426881169901691" type="ProgressBar">
+                            <param id="0" name="Value">timer</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

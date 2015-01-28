@@ -213,37 +213,25 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="bullet" uid="137">
+                <instance type="Sprite22" uid="146">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>300</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1558</x>
-                        <y>1375</y>
+                        <x>-178</x>
+                        <y>1305</y>
                         <z>0</z>
-                        <width>76.485466003</width>
-                        <height>40.935886383</height>
+                        <width>250</width>
+                        <height>1295</height>
                         <depth>0</depth>
-                        <hotspotX>0.492957741</hotspotX>
-                        <hotspotY>0.644736826</hotspotY>
-                        <angle>0.374325663</angle>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -306,6 +294,40 @@
                         <hotspotX>0.501915693</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="bullet" uid="137">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>300</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1439.094604492</x>
+                        <y>1427.177856445</y>
+                        <z>0</z>
+                        <width>36.126682281</width>
+                        <height>37.202419281</height>
+                        <depth>0</depth>
+                        <hotspotX>0.506203473</hotspotX>
+                        <hotspotY>0.506024122</hotspotY>
+                        <angle>0.374325663</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -378,6 +400,39 @@
                         <depth>0</depth>
                         <hotspotX>1.013157845</hotspotX>
                         <hotspotY>0.527777791</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="explotion" uid="145">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>Yes</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>1</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-83</x>
+                        <y>442</y>
+                        <z>0</z>
+                        <width>326</width>
+                        <height>336</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

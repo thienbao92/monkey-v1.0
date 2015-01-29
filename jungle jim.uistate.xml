@@ -10,15 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>main page</layout>
-        <layout>monkey and plane</layout>
         <layout>monkey and coconut</layout>
-        <layout>monkey and fish</layout>
-        <layout>Score sheet</layout>
         <event-sheet active="1">monkey and coconut</event-sheet>
-        <event-sheet>Score sheet</event-sheet>
-        <event-sheet>main page</event-sheet>
-        <event-sheet>monkey and plane</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

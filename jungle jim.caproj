@@ -1728,7 +1728,8 @@
     </global-instances>
     <sounds-folder>
         <file name="small_airplane_long_flyby-Mike_Koenig-806755389_01.ogg" />
-        <file name="wave.ogg" />
+        <file name="4.ogg" />
+        <file name="4(1).ogg" />
     </sounds-folder>
     <music-folder>
         <file name="FINNAL_01.ogg" />

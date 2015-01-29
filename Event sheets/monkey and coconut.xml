@@ -137,8 +137,8 @@
                         <condition id="-2" name="On start of layout" sid="5352474151232848" type="System" />
                     </conditions>
                     <actions>
-                        <action id="0" name="Play" sid="6978690876433498" type="Audio">
-                            <param id="0" name="Audio file">wave</param>
+                        <action id="0" name="Play" sid="7965064129768963" type="Audio">
+                            <param id="0" name="Audio file">4(1)</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>

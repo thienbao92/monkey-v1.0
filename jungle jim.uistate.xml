@@ -12,10 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>main page</layout>
         <layout>Score sheet</layout>
-        <layout active="1">monkey and coconut</layout>
+        <layout>monkey and coconut</layout>
         <event-sheet>Score sheet</event-sheet>
         <event-sheet>monkey and coconut</event-sheet>
-        <event-sheet>monkey and fish</event-sheet>
+        <event-sheet active="1">monkey and fish</event-sheet>
         <event-sheet>monkey and plane</event-sheet>
         <event-sheet>monkey on fire</event-sheet>
     </open-tabs>

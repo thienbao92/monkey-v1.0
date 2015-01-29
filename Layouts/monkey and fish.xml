@@ -316,7 +316,7 @@
                     </properties>
                     <instance-variables>
                         <speed>-10</speed>
-                        <timer>0</timer>
+                        <timer>5</timer>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

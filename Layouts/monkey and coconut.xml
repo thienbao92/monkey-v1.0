@@ -38,11 +38,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>964</x>
+                        <x>951.548828125</x>
                         <y>546</y>
                         <z>0</z>
-                        <width>1928.09753418</width>
-                        <height>1079.854980469</height>
+                        <width>1953</width>
+                        <height>1080</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -196,13 +196,16 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="character" uid="48">
+                <instance type="basket" uid="48">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <coconut>0</coconut>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">
                             <properties>
@@ -213,11 +216,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>660</x>
-                        <y>782</y>
+                        <x>581</x>
+                        <y>819</y>
                         <z>0</z>
-                        <width>267</width>
-                        <height>260</height>
+                        <width>368.699005127</width>
+                        <height>359.032714844</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -238,8 +241,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>959.5</x>
-                        <y>1043</y>
+                        <x>964</x>
+                        <y>1097</y>
                         <z>0</z>
                         <width>1917</width>
                         <height>72</height>

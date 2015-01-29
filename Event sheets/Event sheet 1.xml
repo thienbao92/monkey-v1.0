@@ -61,8 +61,8 @@
                 <action id="-3" name="Create object" sid="1195246899014379" type="System">
                     <param id="0" name="Object to create">lua_</param>
                     <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">1276</param>
-                    <param id="3" name="Y">1050</param>
+                    <param id="2" name="X">1920</param>
+                    <param id="3" name="Y">1116</param>
                 </action>
             </actions>
         </event-block>
@@ -110,6 +110,12 @@
                 <action id="4" name="Set animation" sid="945609067362216" type="khiChay_">
                     <param id="0" name="Animation">&quot;jump&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="6067395615904078" type="Audio">
+                    <param id="0" name="Audio file">nhay cao</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -160,13 +166,21 @@
                     <param id="0" name="Variable">counter</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="33" name="Stop all" sid="3073458006906784" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="1834528779157021">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="8274955887707425" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="5758299037221025" type="Audio">
+                    <param id="0" name="Audio file">lua chay</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -14,9 +14,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="1670212220286825" type="character">
-                            <param id="0" name="X">lerp(character.X, LeapMotion.HandXForID(HandID), 0.1*(120*dt))</param>
-                            <param id="1" name="Y">881</param>
+                        <action id="-3" name="Set position" sid="1670212220286825" type="basket">
+                            <param id="0" name="X">lerp(basket.X, LeapMotion.HandXForID(HandID), 0.1*(120*dt))</param>
+                            <param id="1" name="Y">800</param>
                         </action>
                     </actions>
                 </event-block>
@@ -38,7 +38,7 @@
                 <event-block sid="892325632864577">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="3412272387783434" type="coconut">
-                            <param id="0" name="Object">character</param>
+                            <param id="0" name="Object">basket</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -52,6 +52,10 @@
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="1352289271386436" type="basket">
+                            <param id="0" name="Instance variable">coconut</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -108,6 +112,10 @@
                 </action>
                 <action id="-2" name="Go to layout" sid="5338560545663764" type="System">
                     <param id="0" name="Layout">Score sheet</param>
+                </action>
+                <action id="-12" name="Set group active" sid="970448065650818" type="System">
+                    <param id="0" name="Group name">&quot;banana&quot;</param>
+                    <param id="1" name="State">2</param>
                 </action>
             </actions>
         </event-block>
@@ -341,6 +349,62 @@
         <event-block sid="3892686259861783">
             <conditions />
             <actions />
+        </event-block>
+        <event-block sid="8716998889577977">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3288857991269377" type="basket">
+                    <param id="0" name="Instance variable">coconut</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1719179410298264" type="basket">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2619365516958624">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9401289316254339" type="basket">
+                    <param id="0" name="Instance variable">coconut</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6556803622561361" type="basket">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3068923805537064">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6070240250294744" type="basket">
+                    <param id="0" name="Instance variable">coconut</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="2039015501794466" type="basket">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8580321771599128">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1402314215772551" type="basket">
+                    <param id="0" name="Instance variable">coconut</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3760391531293439" type="basket">
+                    <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

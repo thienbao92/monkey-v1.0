@@ -10,19 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>main page</layout>
-        <layout>Score sheet</layout>
-        <layout>monkey and coconut</layout>
         <layout>JP circus</layout>
-        <layout>monkey and fish</layout>
-        <layout>monkey on fire</layout>
-        <layout>monkey and plane</layout>
-        <event-sheet>Score sheet</event-sheet>
-        <event-sheet>monkey and coconut</event-sheet>
-        <event-sheet>monkey and fish</event-sheet>
-        <event-sheet>monkey and plane</event-sheet>
-        <event-sheet active="1">Event sheet 1</event-sheet>
-        <event-sheet>monkey on fire</event-sheet>
+        <layout active="1">monkey and coconut</layout>
+        <event-sheet>Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -52,7 +42,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/brick/" />
         <folder expanded="1" path="animation-folder/controller/" />
         <folder expanded="1" path="animation-folder/land/" />
-        <folder expanded="1" path="animation-folder/character/" />
+        <folder expanded="1" path="animation-folder/basket/" />
         <folder expanded="1" path="animation-folder/coconut/" />
         <folder expanded="1" path="animation-folder/plane/" />
         <folder expanded="1" path="animation-folder/highTree/" />

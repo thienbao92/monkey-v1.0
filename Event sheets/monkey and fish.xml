@@ -58,7 +58,7 @@
                     <param id="0" name="Object to create">caVoi</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">1920</param>
-                    <param id="3" name="Y">round(random(100,900))</param>
+                    <param id="3" name="Y">round(random(258,900))</param>
                 </action>
             </actions>
         </event-block>
@@ -73,7 +73,7 @@
                     <param id="0" name="Object to create">caXanh</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">1920</param>
-                    <param id="3" name="Y">random(0,1000)</param>
+                    <param id="3" name="Y">random(258,1000)</param>
                 </action>
             </actions>
         </event-block>
@@ -94,10 +94,24 @@
         </event-block>
         <event-block sid="6599442597889038">
             <conditions>
-                <condition id="-4" name="Is outside layout" sid="1245274758087154" type="octopus" />
+                <condition id="-2" name="Compare Y" sid="1245274758087154" type="octopus">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">258</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="8007567796881025" type="octopus" />
+            </actions>
+        </event-block>
+        <event-block sid="8568410365325074">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="2144502408995912" type="sua">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">258</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9629654819618969" type="sua" />
             </actions>
         </event-block>
         <event-group description="" sid="3303985404972524" title="Controller6">
@@ -154,6 +168,12 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="3523354925643599" type="caVoi" />
+                        <action id="0" name="Play" sid="3976970890895688" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="6227632198530874">
@@ -178,6 +198,12 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="8088086764168022" type="caXanh" />
+                        <action id="0" name="Play" sid="3807926673920011" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="2537858754670041">
@@ -202,6 +228,12 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="6741495495026803" type="octopus" />
+                        <action id="0" name="Play" sid="8870298764719503" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block any="1" sid="9348471235779755">
@@ -226,6 +258,12 @@
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="7753270162535546" type="sua" />
+                        <action id="0" name="Play" sid="4455951977021854" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -315,7 +353,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="6584431856774416" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">5</param>
+                                    <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
@@ -602,5 +640,18 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="9994032114217256">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="5645237960376512" type="boat">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">258</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="2694591662306499" type="boat">
+                    <param id="0" name="Y">258</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

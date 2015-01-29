@@ -60,7 +60,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="-25" name="Go to layout (by name)" sid="4556958155829716" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|monkey and fish|monkey and plane|monkey and banana&quot;, round(random(0,3)), &quot;|&quot;)</param>
+                            <param id="0" name="Layout">tokenat(&quot;JP circus|monkey and fish|monkey and plane|monkey and banana&quot;, round(random(0,3)), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>

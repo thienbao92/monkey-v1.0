@@ -2,5 +2,171 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="7549362381564265">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="4323352337951013" type="System">
+                    <param id="0" name="First value">handID</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="4003616319674747" type="Sprite25">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">lerp(sprite25.Y, LeapMotion.HandYForID(HandID), 0.1*(120*dt))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2461004746232593">
+            <conditions>
+                <condition id="0" name="On any hand enter frame" sid="9043630132241097" type="LeapMotion" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8388247761800881" type="System">
+                    <param id="0" name="Variable">handID</param>
+                    <param id="1" name="Value">LeapMotion.LastHandID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6758774338270601">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="747010890746292" type="System" />
+            </conditions>
+            <actions>
+                <action id="-17" name="Move forward" sid="743429018359026" type="lua_">
+                    <param id="0" name="Distance">lua_.speed</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="272661063150907">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="3122233424045408" type="System">
+                    <param id="0" name="Interval (seconds)">4.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="3849250956770934" type="lua_">
+                    <param id="0" name="Height">random(150,420)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4764583424828916">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="6618012412873677" type="System">
+                    <param id="0" name="Interval (seconds)">4.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1195246899014379" type="System">
+                    <param id="0" name="Object to create">lua_</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1276</param>
+                    <param id="3" name="Y">1050</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9905374929611015">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5900822828253683" type="khiChay_">
+                    <param id="0" name="Object">lua_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6628962914897793" type="System">
+                    <param id="0" name="Layout">Score sheet</param>
+                </action>
+                <action id="-10" name="Add to" sid="2996348643982541" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="7392360331074016" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="903820179284294">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="8040290580767184" type="khiChay_" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7414982410597305" type="khiChay_">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6834861219810168">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="6516539432120171" type="Sprite25">
+                    <param id="0" name="Object">Sprite16</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="8394989301044278" type="khiChay_">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="945609067362216" type="khiChay_">
+                    <param id="0" name="Animation">&quot;jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="4973837181228161" title="timer 7" />
+        <event-block sid="1652099013380176">
+            <conditions>
+                <condition id="1" name="Compare progress" sid="5415945105980557" type="ProgressBar">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1151570677190067" type="System">
+                    <param id="0" name="Layout">Score sheet</param>
+                </action>
+                <action id="-10" name="Add to" sid="7959024541780232" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-10" name="Add to" sid="254593251392782" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3507029965328324">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4083401751984512" type="System">
+                    <param id="0" name="Interval (seconds)">0.05</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="7550121586475775" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">0.3</param>
+                </action>
+                <action id="3" name="Set progress" sid="930642579065779" type="ProgressBar">
+                    <param id="0" name="Value">timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9766893795265835">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="3502413476459637" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9542809159371312" type="System">
+                    <param id="0" name="Variable">counter</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1834528779157021">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8274955887707425" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
 </c2eventsheet>

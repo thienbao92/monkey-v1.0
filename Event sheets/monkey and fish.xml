@@ -44,7 +44,7 @@
         <event-block sid="2737390400213085">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="8182057383310819" type="System">
-                    <param id="0" name="Interval (seconds)">8</param>
+                    <param id="0" name="Interval (seconds)">caVoi.timer</param>
                 </condition>
             </conditions>
             <actions>
@@ -65,7 +65,7 @@
         <event-block sid="2145991631191571">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="2781879474185001" type="System">
-                    <param id="0" name="Interval (seconds)">choose(2,4,6)</param>
+                    <param id="0" name="Interval (seconds)">caXanh.timer</param>
                 </condition>
             </conditions>
             <actions>
@@ -80,7 +80,7 @@
         <event-block sid="3611284847296055">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="2581460819627428" type="System">
-                    <param id="0" name="Interval (seconds)">10</param>
+                    <param id="0" name="Interval (seconds)">octopus.timer</param>
                 </condition>
             </conditions>
             <actions>
@@ -302,7 +302,14 @@
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="4786025038844807" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="5230913219765334" type="Audio">
+                            <param id="0" name="Audio file">tieng nuoc cach 1 s</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="7467656224136203">
                             <conditions>
@@ -319,11 +326,27 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2605619052425079" type="caXanh">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">-6</param>
+                                    <param id="1" name="Value">-7</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="395195837357309" type="caXanh">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">4</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="9406180646368007" type="caVoi">
                                     <param id="0" name="Instance variable">speed</param>
                                     <param id="1" name="Value">-4</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4758683743462342" type="caVoi">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="4952494389155776" type="octopus">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7496063721813685" type="sua">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -331,8 +354,8 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4675034908535911" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">5</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -342,11 +365,31 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="7352866036934312" type="caXanh">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">-7</param>
+                                    <param id="1" name="Value">-9</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="7788575683776367" type="caVoi">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">-5</param>
+                                    <param id="1" name="Value">-6</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="1418537278376161" type="boat">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6381147323090122" type="caXanh">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="794109885390887" type="caVoi">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="3924048741933827" type="octopus">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="1285574002059691" type="sua">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -354,8 +397,8 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5832025855190142" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">10</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -365,11 +408,27 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1270875874549568" type="caXanh">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">-8</param>
+                                    <param id="1" name="Value">-11</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="4479080074183947" type="caVoi">
                                     <param id="0" name="Instance variable">speed</param>
-                                    <param id="1" name="Value">-6</param>
+                                    <param id="1" name="Value">-9</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="2335621602357736" type="caXanh">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">2.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="7541051729306366" type="caVoi">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="507039372241221" type="octopus">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5449611879616817" type="sua">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">4</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -477,7 +536,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="5309100740024362" type="System">
                             <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">0.2</param>
+                            <param id="1" name="Value">0.4</param>
                         </action>
                     </actions>
                 </event-block>
@@ -496,7 +555,7 @@
         <event-block sid="629440621825555">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="4817810118011883" type="System">
-                    <param id="0" name="Interval (seconds)">6</param>
+                    <param id="0" name="Interval (seconds)">sua.timer</param>
                 </condition>
             </conditions>
             <actions>
@@ -532,6 +591,12 @@
                         <action id="-4" name="Set layer visible" sid="5629247731547002" type="System">
                             <param id="0" name="Layer">&quot;hand&quot;</param>
                             <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="8007863328490881" type="Audio" />
+                        <action id="-26" name="Restart layout" sid="7034451949760582" type="System" />
+                        <action id="-9" name="Set value" sid="4548342962740937" type="System">
+                            <param id="0" name="Variable">timer</param>
+                            <param id="1" name="Value">100</param>
                         </action>
                     </actions>
                 </event-block>

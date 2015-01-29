@@ -367,7 +367,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="21" loop="1" name="fly2" pingpong="0" repeatcount="1" repeatto="0" sid="9377601956366665" speed="8">
+                <animation framecount="21" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9377601956366665" speed="8">
                     <frame duration="1" hotspotX="0.968927" hotspotY="0.664773" original-source="C:\game\Sprites\monkey\monkey on plane\animation\fly\khi_00001.png">
                         <image-point name="Imagepoint 1" x="0.0536723" y="0.8125" />
                         <collision-poly>
@@ -874,9 +874,9 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2247174591042747" speed="0">
-                    <frame duration="1" hotspotX="0.51505" hotspotY="0.486111" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud2.png" />
-                    <frame duration="1" hotspotX="0.495968" hotspotY="0.485915" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud3.png" />
-                    <frame duration="1" hotspotX="0.4947" hotspotY="0.487805" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud1.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="-0.00694444" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud2.png" />
+                    <frame duration="1" hotspotX="0.522177" hotspotY="-0.00704225" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud3.png" />
+                    <frame duration="1" hotspotX="0.522968" hotspotY="-0.00813008" original-source="C:\game\Sprites\monkey\monkey on plane\sprites\cloud1.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1080,6 +1080,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="speed" sid="809406348200694" type="number" />
+                <instance-variable name="timer" sid="3230802528751904" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="19" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1835959795350412" speed="15">
@@ -1249,32 +1250,33 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="speed" sid="5768210092347129" type="number" />
+                <instance-variable name="timer" sid="3530364932724219" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="12" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5477034397894255" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00001.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00001.png">
                         <collision-poly>
-                            <point x="0.318919" y="0.129808" />
-                            <point x="0.483784" y="0.00961538" />
-                            <point x="0.651351" y="0.125" />
-                            <point x="0.921622" y="0.423077" />
-                            <point x="0.702703" y="0.8125" />
-                            <point x="0.483784" y="0.966346" />
-                            <point x="0.205405" y="0.918269" />
-                            <point x="0.108108" y="0.423077" />
+                            <point x="0.288021" y="0" />
+                            <point x="0.466253" y="0" />
+                            <point x="0.647407" y="0" />
+                            <point x="0.939591" y="0.275148" />
+                            <point x="0.702922" y="1" />
+                            <point x="0.466253" y="1" />
+                            <point x="0.165303" y="1" />
+                            <point x="0.0601168" y="0.275148" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.501348" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00004.png" />
-                    <frame duration="1" hotspotX="0.501312" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00007.png" />
-                    <frame duration="1" hotspotX="0.501433" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00008.png" />
-                    <frame duration="1" hotspotX="0.501449" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00009.png" />
-                    <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\monkey on boat\ANIMATION\ca\ca_00012.png" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00004.png" />
+                    <frame duration="1" hotspotX="0.501312" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00007.png" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00008.png" />
+                    <frame duration="1" hotspotX="0.501449" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00009.png" />
+                    <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\ANIMATION\Sea\sea-png\ca\ca_00012.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1282,6 +1284,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="speed" sid="3152653663628698" type="number" />
+                <instance-variable name="timer" sid="1715349481727185" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="6086546128787028">
@@ -1328,6 +1331,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="speed" sid="3255778832004427" type="number" />
+                <instance-variable name="timer" sid="3675413952926277" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="3931870216402209">
@@ -1730,9 +1734,20 @@
         <file name="small_airplane_long_flyby-Mike_Koenig-806755389_01.ogg" />
         <file name="4.ogg" />
         <file name="4(1).ogg" />
+        <file name="dua roi.ogg" />
+        <file name="hung dua.ogg" />
+        <file name="tieng no.ogg" />
+        <file name="Tieng nuoc chay.ogg" />
+        <file name="tieng nuoc 2.ogg" />
+        <file name="tieng nuoc cach 1 s.ogg" />
+        <file name="dua vo.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="FINNAL_01.ogg" />
+        <file name="Jungle Jim nen_01.ogg" />
+        <file name="Jungle Jim nhac nen_01.ogg" />
+        <file name="nhac nen complete.ogg" />
+        <file name="nhac completed .ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

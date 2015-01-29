@@ -35,24 +35,9 @@
         </event-group>
         <event-group description="" sid="880961937812819" title="banana">
             <sub-events>
-                <event-block sid="9819285819509981">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="9219226924285455" type="System">
-                            <param id="0" name="Interval (seconds)">coconut.time</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="9711125467138308" type="System">
-                            <param id="0" name="Object to create">coconut</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">random(100,1480)</param>
-                            <param id="3" name="Y">0</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="892325632864577">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="3412272387783434" type="coconut">
+                        <condition id="0" name="On collision with another object" sid="3412272387783434" type="coconut">
                             <param id="0" name="Object">character</param>
                         </condition>
                     </conditions>
@@ -62,23 +47,34 @@
                             <param id="0" name="Animation">&quot;happy&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
+                        <action id="0" name="Play" sid="2833353872178898" type="Audio">
+                            <param id="0" name="Audio file">hung dua</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="232924173597881">
-                            <conditions>
-                                <condition id="-1" name="Every tick" sid="6824123238087627" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Set position" sid="5732056570336428" type="coconut">
-                                    <param id="0" name="X">character.X</param>
-                                    <param id="1" name="Y">character.Y</param>
-                                </action>
-                                <action behavior="Platform" id="11" name="Set enabled" sid="4124510604162123" type="coconut">
-                                    <param id="0" name="State">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                </event-block>
+                <event-block sid="9819285819509981">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="9219226924285455" type="System">
+                            <param id="0" name="Interval (seconds)">coconut.time</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="5467076879731832" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="9711125467138308" type="System">
+                            <param id="0" name="Object to create">coconut</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">random(100,1480)</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -89,6 +85,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="2861483726657699" type="Audio">
+                    <param id="0" name="Audio file">dua vo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="4" name="Set animation" sid="1340568811632779" type="coconut">
                     <param id="0" name="Animation">&quot;broken&quot;</param>
                     <param id="1" name="From">1</param>
@@ -140,7 +142,7 @@
                         <action id="0" name="Play" sid="7965064129768963" type="Audio">
                             <param id="0" name="Audio file">4(1)</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">-10</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
@@ -301,10 +303,20 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-16" name="Wait" sid="8236695172806181" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
                         <action id="-11" name="Subtract from" sid="4573776480580802" type="System">
                             <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">0.3</param>
+                            <param id="1" name="Value">0.4</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3126626656285443">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="285965665161025" type="System" />
+                    </conditions>
+                    <actions>
                         <action id="3" name="Set progress" sid="2426881169901691" type="ProgressBar">
                             <param id="0" name="Value">timer</param>
                         </action>
@@ -317,10 +329,18 @@
                 <condition id="-3" name="On end of layout" sid="9520006727176342" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="9708469638986121" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="33" name="Stop all" sid="9708469638986121" type="Audio" />
+                <action id="-9" name="Destroy" sid="3711405805646295" type="coconut" />
+                <action id="-26" name="Restart layout" sid="9072599090688891" type="System" />
+                <action id="-9" name="Set value" sid="6803641193421693" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">100</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="3892686259861783">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>

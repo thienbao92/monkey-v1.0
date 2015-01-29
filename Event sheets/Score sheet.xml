@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Score sheet</name>
     <events>
-        <variable constant="0" name="layout" sid="2446635666880462" static="0" type="text">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</variable>
         <variable constant="0" name="life" sid="8004689634619471" static="0" type="number">3</variable>
         <event-group description="Life stars equal to life" sid="1726543348345004" title="Life animation">
             <sub-events>
@@ -22,9 +21,8 @@
                         <action id="-16" name="Wait" sid="2123385849582748" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="2" name="Stop" sid="4423369356115106" type="star" />
                         <action id="-25" name="Go to layout (by name)" sid="7719930557311928" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -43,9 +41,8 @@
                         <action id="-16" name="Wait" sid="8054628823014577" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="2" name="Stop" sid="1834485899999908" type="star" />
-                        <action id="-25" name="Go to layout (by name)" sid="6547020919612061" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="9875572629352166" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -64,8 +61,8 @@
                         <action id="-16" name="Wait" sid="7411110505729545" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="-25" name="Go to layout (by name)" sid="947226616473092" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|boat|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="4295490570041588" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fires|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3,4), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -144,7 +141,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="6519116368031999" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="5029486455168519" type="System">
                             <param id="0" name="Layer">&quot;Layer 0&quot;</param>
@@ -168,7 +165,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="1921810131876518" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="9679010284926307" type="System">
                             <param id="0" name="Layer">&quot;Layer 0&quot;</param>
@@ -192,7 +189,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="5252322522619727" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="7453515463645248" type="System">
                             <param id="0" name="Layer">&quot;Layer 0&quot;</param>
@@ -216,7 +213,7 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="8904913408360837" type="System">
-                            <param id="0" name="Seconds">2</param>
+                            <param id="0" name="Seconds">1</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="5677755038250971" type="System">
                             <param id="0" name="Layer">&quot;Layer 0&quot;</param>
@@ -240,6 +237,19 @@
                 <action id="-4" name="Set layer visible" sid="543703604302745" type="System">
                     <param id="0" name="Layer">&quot;Layer 0&quot;</param>
                     <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1838417273857255">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4009757609907969" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5163884553566049" type="Audio">
+                    <param id="0" name="Audio file">nhac completed </param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;background&quot;</param>
                 </action>
             </actions>
         </event-block>

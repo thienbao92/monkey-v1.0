@@ -264,7 +264,7 @@
                     <actions>
                         <action id="-11" name="Subtract from" sid="4573776480580802" type="System">
                             <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">0.3</param>
+                            <param id="1" name="Value">0.4</param>
                         </action>
                         <action id="3" name="Set progress" sid="2426881169901691" type="ProgressBar">
                             <param id="0" name="Value">timer</param>
@@ -285,6 +285,7 @@
                 <action id="-2" name="Go to layout" sid="4325655912410411" type="System">
                     <param id="0" name="Layout">Score sheet</param>
                 </action>
+                <action id="-26" name="Restart layout" sid="2689181788697075" type="System" />
             </actions>
             <sub-events>
                 <event-block sid="5151498920038522">

@@ -11,8 +11,11 @@
                 <condition id="-3" name="On end of layout" sid="8274412217305204" type="System" />
             </conditions>
             <actions>
-                <action id="6" name="Stop" sid="3361219056667096" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="33" name="Stop all" sid="3361219056667096" type="Audio" />
+                <action id="-26" name="Restart layout" sid="7900536827624806" type="System" />
+                <action id="-9" name="Set value" sid="5794258312735941" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">100</param>
                 </action>
             </actions>
         </event-block>
@@ -131,17 +134,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="3192429506430805">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="8626350240670346" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="9556633351953223" type="plane">
-                            <param id="0" name="Animation">&quot;fly2&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="8533924246676048" title="timer">
@@ -197,7 +189,13 @@
                         <action id="0" name="Play" sid="8749326598651631" type="Audio">
                             <param id="0" name="Audio file">small_airplane_long_flyby-Mike_Koenig-806755389_01</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
+                            <param id="3" name="Volume">20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="9265759499726187" type="Audio">
+                            <param id="0" name="Audio file">Jungle Jim nhac nen_01</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">20</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
@@ -206,7 +204,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="8379192198366994" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
@@ -217,7 +215,10 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="100730703921493" type="plane">
                                     <param id="0" name="Instance variable">timer</param>
-                                    <param id="1" name="Value">5</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="2340758933545911" type="bullet">
+                                    <param id="0" name="Speed">350</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -225,7 +226,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4084416662079347" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
@@ -236,7 +237,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="9722599861236172" type="plane">
                                     <param id="0" name="Instance variable">timer</param>
-                                    <param id="1" name="Value">4</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="8566636713988274" type="bullet">
                                     <param id="0" name="Speed">400</param>
@@ -247,7 +248,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5279289469325994" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
@@ -258,10 +259,14 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="6297272850158998" type="plane">
                                     <param id="0" name="Instance variable">timer</param>
-                                    <param id="1" name="Value">3</param>
+                                    <param id="1" name="Value">2.5</param>
                                 </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="8659610277173469" type="bullet">
                                     <param id="0" name="Speed">500</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5002800659936058" type="plane">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">2</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -269,7 +274,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4695250157313257" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">9</param>
                                 </condition>
                             </conditions>
@@ -280,6 +285,14 @@
                                 </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="5696906720200352" type="bullet">
                                     <param id="0" name="Speed">600</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="1460142114010004" type="plane">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="1054837784717307" type="plane">
+                                    <param id="0" name="Instance variable">timer</param>
+                                    <param id="1" name="Value">2.5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -378,7 +391,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="4573776480580802" type="System">
                             <param id="0" name="Variable">timer</param>
-                            <param id="1" name="Value">0.2</param>
+                            <param id="1" name="Value">0.4</param>
                         </action>
                     </actions>
                 </event-block>
@@ -582,7 +595,7 @@
                     <param id="0" name="Object to create">cloud</param>
                     <param id="1" name="Layer">0</param>
                     <param id="2" name="X">1916</param>
-                    <param id="3" name="Y">106</param>
+                    <param id="3" name="Y">random(10,200)</param>
                 </action>
                 <action id="5" name="Set frame" sid="3130146905905898" type="cloud">
                     <param id="0" name="Frame number">choose(0,1,2)</param>
@@ -600,6 +613,12 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="2886115243014217" type="Audio">
+                    <param id="0" name="Audio file">tieng no</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Spawn another object" sid="2751005022312514" type="bullet">
                     <param id="0" name="Object">explotion</param>
                     <param id="1" name="Layer">0</param>
@@ -617,7 +636,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="3890058255654733">
+        <event-block disabled="1" sid="3890058255654733">
             <conditions>
                 <condition id="1" name="Compare progress" sid="1877704228193995" type="ProgressBar">
                     <param id="0" name="Comparison">0</param>

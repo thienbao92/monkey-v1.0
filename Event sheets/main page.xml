@@ -53,8 +53,14 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Play" sid="241561499641397" type="Audio">
+                            <param id="0" name="Audio file">dua roi</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-25" name="Go to layout (by name)" sid="4556958155829716" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|boat|monkey and plane|monkey and banana&quot;, round(random(0,3)), &quot;|&quot;)</param>
+                            <param id="0" name="Layout">tokenat(&quot;monkey on fire|monkey and fish|monkey and plane|monkey and banana&quot;, round(random(0,3)), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -137,7 +143,7 @@
         <event-block sid="4251474993129616">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="1860925474269098" type="System">
-                    <param id="0" name="Interval (seconds)">3</param>
+                    <param id="0" name="Interval (seconds)">5</param>
                 </condition>
             </conditions>
             <actions>
@@ -202,6 +208,21 @@
                 <action behavior="Platform" id="9" name="Set vector Y" sid="9217567915130404" type="Sprite12">
                     <param id="0" name="Vector Y">-360</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="3262453691577296">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="8592215758885751" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="498055303861929" type="Audio" />
+                <action disabled="1" id="0" name="Play" sid="3896798266477856" type="Audio">
+                    <param id="0" name="Audio file">Jungle Jim nen_01</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="8473674141048048" type="System" />
             </actions>
         </event-block>
     </events>

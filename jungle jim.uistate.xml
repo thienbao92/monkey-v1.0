@@ -10,10 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1">monkey and coconut</layout>
+        <layout>main page</layout>
         <layout>Score sheet</layout>
-        <event-sheet>monkey and coconut</event-sheet>
+        <layout active="1">monkey and coconut</layout>
         <event-sheet>Score sheet</event-sheet>
+        <event-sheet>monkey and coconut</event-sheet>
+        <event-sheet>monkey and fish</event-sheet>
+        <event-sheet>monkey and plane</event-sheet>
+        <event-sheet>monkey on fire</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +30,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="layout-folder/game/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/game/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />

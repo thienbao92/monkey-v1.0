@@ -207,8 +207,8 @@
                         <width>299</width>
                         <height>144</height>
                         <depth>0</depth>
-                        <hotspotX>0.515050173</hotspotX>
-                        <hotspotY>0.486111104</hotspotY>
+                        <hotspotX>0.521739125</hotspotX>
+                        <hotspotY>-0.006944444</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -308,7 +308,7 @@
                         <behavior-instance type="Bullet">
                             <properties>
                                 <speed>300</speed>
-                                <acceleration>0</acceleration>
+                                <acceleration>1000</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
@@ -319,15 +319,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1439.094604492</x>
-                        <y>1427.177856445</y>
+                        <x>1349</x>
+                        <y>-109</y>
                         <z>0</z>
                         <width>36.126682281</width>
                         <height>37.202419281</height>
                         <depth>0</depth>
                         <hotspotX>0.506203473</hotspotX>
                         <hotspotY>0.506024122</hotspotY>
-                        <angle>0.374325663</angle>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -357,7 +357,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <health>5</health>
+                        <health>3</health>
                         <timer>5</timer>
                     </instance-variables>
                     <behavior-instances>

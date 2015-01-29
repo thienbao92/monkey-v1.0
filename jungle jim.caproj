@@ -1673,6 +1673,81 @@
         <object-type name="Audio" sid="9514653894599778">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Sprite16" sid="6747162069581409">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6878279670358079" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.526316" original-source="D:\flappy\floor2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="7249121022857354">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9494806066341023">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7910153450671222" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\flappy\floor.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="3623439866013493">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3127048512125268" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\monkey-v1.0\monkey-v1.0\Animations\caVoi\ca2\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="4522747347710903">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6054085593047578" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\monkey-v1.0\monkey-v1.0\Animations\character\Default\000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="khiChay_" sid="8930669776681083">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="15" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7596579860593317" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\khi chay\khi chay_00015.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lua_" sid="5098742665392289">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="speed" sid="8628983085482279" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2289234719778414" speed="12">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\monkey\2-3-GAMEPLAY-CIRCUS\mung\lua\lua_00006.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1686,6 +1761,7 @@
             <layout>Score sheet.xml</layout>
             <layout>monkey and fish.xml</layout>
             <layout>screen saver.xml</layout>
+            <layout>JP circus.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder>
@@ -1699,6 +1775,7 @@
             <event-sheet>monkey and fish.xml</event-sheet>
         </event-folder>
         <event-sheet>screen saver.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="LeapMotion" uid="5">

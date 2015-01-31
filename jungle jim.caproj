@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>jungle jim</name>
-    <description></description>
+    <description>game</description>
     <version>1.0.0.0</version>
-    <author></author>
+    <author>Bao Vu</author>
     <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
@@ -771,18 +771,21 @@
         <object-type name="Sprite8" sid="8990765517976578">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="11" loop="1" name="move" pingpong="1" repeatcount="1" repeatto="0" sid="2452865241724182" speed="13">
-                    <frame duration="1" hotspotX="0.443262" hotspotY="0.622159" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00001.png" />
-                    <frame duration="1" hotspotX="0.443262" hotspotY="0.566572" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00002.png" />
-                    <frame duration="1" hotspotX="0.443262" hotspotY="0.539773" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00003.png" />
-                    <frame duration="1" hotspotX="0.443262" hotspotY="0.525568" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00004.png" />
-                    <frame duration="1" hotspotX="0.443262" hotspotY="0.497159" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00005.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.448864" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00006.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.409091" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00007.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.388102" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00008.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.354108" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00009.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.332386" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00010.png" />
-                    <frame duration="1" hotspotX="0.434164" hotspotY="0.332386" original-source="C:\game\Sprites\monkey\hand\hand 2\hand 2_00011.png" />
+                <animation framecount="14" loop="1" name="move" pingpong="1" repeatcount="1" repeatto="0" sid="2452865241724182" speed="13">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00014.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2091,6 +2094,77 @@
         <object-type name="TiledBackground4" sid="8549758907918876">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\background.png" />
+        </object-type>
+        <object-type name="Sprite29" sid="5833823252332225">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6457791430295246" speed="5">
+                    <frame duration="1" hotspotX="0.552347" hotspotY="0.48" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-2 GAMEPLAY - BEACH\Jimonthebeach\dua be\dua be_00002.png">
+                        <collision-poly>
+                            <point x="0.231047" y="0.0844444" />
+                            <point x="0.548736" y="0.0355556" />
+                            <point x="0.837545" y="0.12" />
+                            <point x="0.971119" y="0.475556" />
+                            <point x="0.837545" y="0.831111" />
+                            <point x="0.548736" y="0.964444" />
+                            <point x="0.216606" y="0.884444" />
+                            <point x="0.0505415" y="0.475556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text6" sid="8659703311337201">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite30" sid="1205930265982928">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8876894827536343" speed="5">
+                    <frame duration="1" hotspotX="0.500998" hotspotY="0.5" original-source="C:\Users\Thien Bao\Dropbox\JUNGLE JIM\PNG\2-1 - GAMEPLAY - SEA\wave1.png">
+                        <collision-poly>
+                            <point x="0.499002" y="0.458333" />
+                            <point x="0.904192" y="0.5" />
+                            <point x="0.499002" y="0.5" />
+                            <point x="0.0578842" y="0.395833" />
+                            <point x="0.500998" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite31" sid="5286188723404998">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="17" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="4874676102155606" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00001.png">
+                        <collision-poly>
+                            <point x="0.16055" y="0.288066" />
+                            <point x="0.31422" y="0.5" />
+                            <point x="0.147936" y="0.734568" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\left-right\hand_00017.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text7" sid="8430138983046241">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

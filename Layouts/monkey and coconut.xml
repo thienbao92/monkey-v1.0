@@ -60,11 +60,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1624</x>
-                        <y>400</y>
+                        <x>1542.147949219</x>
+                        <y>485.392578125</y>
                         <z>0</z>
-                        <width>610.160705566</width>
-                        <height>793.208862305</height>
+                        <width>741.864624023</width>
+                        <height>964.423950195</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -82,11 +82,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1923.356567383</x>
-                        <y>569.140625</y>
+                        <x>1919</x>
+                        <y>732</y>
                         <z>0</z>
-                        <width>393.182769775</width>
-                        <height>512.952270508</height>
+                        <width>524.88671875</width>
+                        <height>684.167358398</height>
                         <depth>0</depth>
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.818396211</hotspotY>
@@ -104,11 +104,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1603</x>
-                        <y>332</y>
+                        <x>1499</x>
+                        <y>395</y>
                         <z>0</z>
-                        <width>500</width>
-                        <height>650</height>
+                        <width>631.703918457</width>
+                        <height>821.215087891</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -258,8 +258,8 @@
         </layer>
         <layer name="hand" sid="9678189482848891">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
+            <background-color>0,0,0</background-color>
+            <transparent>0</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>
@@ -270,7 +270,84 @@
             <global>0</global>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="Sprite31" uid="175">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1120</x>
+                        <y>414</y>
+                        <z>0</z>
+                        <width>1068.612426758</width>
+                        <height>595.579833984</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text4" uid="176">
+                    <properties>
+                        <text>Liikuta kätesi vasemalta oikealle</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Comic Sans MS,-64,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>8</x>
+                        <y>711</y>
+                        <z>0</z>
+                        <width>1898</width>
+                        <height>99</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text4" uid="177">
+                    <properties>
+                        <text>Move hand left and right to catch coconuts</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Comic Sans MS,-64,700,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>7</x>
+                        <y>868</y>
+                        <z>0</z>
+                        <width>1911</width>
+                        <height>99</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
     </layers>

@@ -57,6 +57,10 @@
                             <param id="0" name="Instance variable">coconut</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-12" name="Subtract from" sid="2905186628760909" type="coconut">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Value">0.2</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9819285819509981">
@@ -106,16 +110,12 @@
                 <action id="-16" name="Wait" sid="6239261994932538" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="-11" name="Subtract from" sid="734173098458562" type="System">
+                <action disabled="1" id="-11" name="Subtract from" sid="734173098458562" type="System">
                     <param id="0" name="Variable">life</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="5338560545663764" type="System">
+                <action disabled="1" id="-2" name="Go to layout" sid="5338560545663764" type="System">
                     <param id="0" name="Layout">Score sheet</param>
-                </action>
-                <action id="-12" name="Set group active" sid="970448065650818" type="System">
-                    <param id="0" name="Group name">&quot;banana&quot;</param>
-                    <param id="1" name="State">2</param>
                 </action>
             </actions>
         </event-block>
@@ -159,7 +159,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="8379192198366994" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
@@ -178,7 +178,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="4084416662079347" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">3</param>
                                 </condition>
                             </conditions>
@@ -189,7 +189,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="1279775921609805" type="coconut">
                                     <param id="0" name="Instance variable">time</param>
-                                    <param id="1" name="Value">2</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -197,7 +197,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5279289469325994" type="System">
                                     <param id="0" name="Variable">counter</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">6</param>
                                 </condition>
                             </conditions>
@@ -208,7 +208,7 @@
                                 </action>
                                 <action id="-10" name="Set value" sid="2282573129964909" type="coconut">
                                     <param id="0" name="Instance variable">time</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">0.5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -403,6 +403,20 @@
             <actions>
                 <action id="5" name="Set frame" sid="3760391531293439" type="basket">
                     <param id="0" name="Frame number">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1717908999542956">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8595742042462427" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="8121848896691769" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="2480322189741127" type="System">
+                    <param id="0" name="Layer">&quot;hand&quot;</param>
+                    <param id="1" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>

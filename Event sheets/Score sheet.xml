@@ -21,8 +21,8 @@
                         <action id="-16" name="Wait" sid="2123385849582748" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="-25" name="Go to layout (by name)" sid="7719930557311928" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;JP circus|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="4330251852166432" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey and plane|monkey and coconut&quot;, round(random(0,1)), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -41,8 +41,8 @@
                         <action id="-16" name="Wait" sid="8054628823014577" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="-25" name="Go to layout (by name)" sid="1952942824310756" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;JP circus|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="420250129086143" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey and plane|monkey and coconut&quot;, round(random(0,1)), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -61,8 +61,8 @@
                         <action id="-16" name="Wait" sid="7411110505729545" type="System">
                             <param id="0" name="Seconds">4</param>
                         </action>
-                        <action id="-25" name="Go to layout (by name)" sid="8311064031534251" type="System">
-                            <param id="0" name="Layout">tokenat(&quot;JP circus|monkey and plane|monkey and coconut|monkey and fish&quot;, choose(0,1,2,3), &quot;|&quot;)</param>
+                        <action id="-25" name="Go to layout (by name)" sid="2822850644896121" type="System">
+                            <param id="0" name="Layout">tokenat(&quot;monkey and plane|monkey and coconut&quot;, round(random(0,1)), &quot;|&quot;)</param>
                         </action>
                     </actions>
                 </event-block>

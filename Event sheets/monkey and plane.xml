@@ -220,6 +220,10 @@
                                 <action behavior="Bullet" id="0" name="Set speed" sid="2340758933545911" type="bullet">
                                     <param id="0" name="Speed">350</param>
                                 </action>
+                                <action id="-10" name="Set value" sid="2932186647052856" type="plane">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="8996899131721042">
@@ -241,6 +245,10 @@
                                 </action>
                                 <action behavior="Bullet" id="0" name="Set speed" sid="8566636713988274" type="bullet">
                                     <param id="0" name="Speed">400</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="9555702274769922" type="plane">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">5</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -425,6 +433,7 @@
                             <param id="0" name="Layer">&quot;hand&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-9" name="Destroy" sid="1023202640515721" type="bullet" />
                     </actions>
                 </event-block>
                 <event-block sid="4675131214753926">

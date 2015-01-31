@@ -48,7 +48,7 @@
             <actions>
                 <action id="-3" name="Create object" sid="1195246899014379" type="System">
                     <param id="0" name="Object to create">lua_</param>
-                    <param id="1" name="Layer">0</param>
+                    <param id="1" name="Layer">&quot;monkey&quot;</param>
                     <param id="2" name="X">1920</param>
                     <param id="3" name="Y">1116</param>
                 </action>
@@ -64,16 +64,21 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="6628962914897793" type="System">
+                <action disabled="1" id="-2" name="Go to layout" sid="6628962914897793" type="System">
                     <param id="0" name="Layout">Score sheet</param>
                 </action>
-                <action id="-10" name="Add to" sid="2996348643982541" type="System">
+                <action disabled="1" id="-10" name="Add to" sid="2996348643982541" type="System">
                     <param id="0" name="Variable">counter</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-11" name="Subtract from" sid="7392360331074016" type="System">
+                <action disabled="1" id="-11" name="Subtract from" sid="7392360331074016" type="System">
                     <param id="0" name="Variable">life</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="8888419415698273" type="khiChay_">
+                    <param id="0" name="&apos;On&apos; time">0.05</param>
+                    <param id="1" name="&apos;Off&apos; time">0.05</param>
+                    <param id="2" name="Duration">0.5</param>
                 </action>
             </actions>
         </event-block>
@@ -90,7 +95,7 @@
         </event-block>
         <event-block sid="6834861219810168">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="6516539432120171" type="Sprite25">
+                <condition id="0" name="On collision with another object" sid="6516539432120171" type="Sprite25">
                     <param id="0" name="Object">Sprite16</param>
                 </condition>
             </conditions>
@@ -111,7 +116,7 @@
             </actions>
         </event-block>
         <event-group description="" sid="4973837181228161" title="timer 7" />
-        <event-block sid="1652099013380176">
+        <event-block disabled="1" sid="1652099013380176">
             <conditions>
                 <condition id="1" name="Compare progress" sid="5415945105980557" type="ProgressBar">
                     <param id="0" name="Comparison">0</param>
@@ -183,6 +188,42 @@
             <actions>
                 <action id="-2" name="Set Y" sid="8931943872839187" type="Sprite25">
                     <param id="0" name="Y">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538105527962516">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2194685713679757" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="7191196868877939" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="1425239398463338" type="System">
+                    <param id="0" name="Layer">&quot;hand&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="449891817125485">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="6609557499397178" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="3317316133265192" type="System">
+                    <param id="0" name="Layer">&quot;hand&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4092689903429625">
+            <conditions>
+                <condition id="1" name="On any hand exit frame" sid="3129768590725272" type="LeapMotion" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6662020492091934" type="Sprite25">
+                    <param id="0" name="X">158</param>
+                    <param id="1" name="Y">899</param>
                 </action>
             </actions>
         </event-block>

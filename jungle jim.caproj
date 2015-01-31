@@ -771,21 +771,21 @@
         <object-type name="Sprite8" sid="8990765517976578">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="14" loop="1" name="move" pingpong="1" repeatcount="1" repeatto="0" sid="2452865241724182" speed="13">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00001.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00002.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00003.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00004.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00005.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00006.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00007.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00008.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00009.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00010.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00011.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00012.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00013.png" />
+                <animation framecount="14" loop="1" name="move" pingpong="0" repeatcount="1" repeatto="0" sid="2452865241724182" speed="13">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\game\Sprites\monkey\hand\hand skin\up-down_00001.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1727,6 +1727,9 @@
                 <behavior-type name="Platform" sid="3620771335529054">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="BoundToLayout" sid="9010423176028166">
+                    <behavior id="bound" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6054085593047578" speed="5">
@@ -1739,6 +1742,9 @@
             <behaviors>
                 <behavior-type name="Platform" sid="8333963208622282">
                     <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="6386500911521138">
+                    <behavior id="Flash" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -2165,6 +2171,61 @@
         </object-type>
         <object-type name="Text7" sid="8430138983046241">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite32" sid="4500395830176375">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="41" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849703096016344" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Khang T. Le\Downloads\khi-nhay.gif">
+                        <collision-poly>
+                            <point x="0.5" y="0.56" />
+                            <point x="0.613333" y="0.768" />
+                            <point x="0.5" y="0.884" />
+                            <point x="0.296667" y="0.822" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
